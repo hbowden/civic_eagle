@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/app.js"
+    "start": "node server/app.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,8 @@
     "express": "^4.14.0",
     "mongoose": "^4.6.1",
     "path": "^0.12.7",
-    "unirest": "^0.5.1"
-  }
+    "unirest": "^0.5.1",
+    "snyk": "^1.85.0"
+  },
+  "snyk": true
 }
